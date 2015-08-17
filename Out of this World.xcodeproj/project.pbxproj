@@ -33,6 +33,7 @@
 		96A1BC9E1B81B6FB00D6C6BD /* Uranus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96A1BC941B81B6FB00D6C6BD /* Uranus.jpg */; };
 		96A1BC9F1B81B6FB00D6C6BD /* Venus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96A1BC951B81B6FB00D6C6BD /* Venus.jpg */; };
 		96A1BCA21B81B72D00D6C6BD /* SGOWSpaceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1BCA11B81B72D00D6C6BD /* SGOWSpaceObject.m */; };
+		96A1BCF21B81D8D400D6C6BD /* SGSpaceImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A1BCF11B81D8D400D6C6BD /* SGSpaceImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		96A1BC951B81B6FB00D6C6BD /* Venus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Venus.jpg; sourceTree = "<group>"; };
 		96A1BCA01B81B72D00D6C6BD /* SGOWSpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SGOWSpaceObject.h; path = "14029481202014-02-10_13-05-31__AstronmicalDataModel/SGOWSpaceObject.h"; sourceTree = "<group>"; };
 		96A1BCA11B81B72D00D6C6BD /* SGOWSpaceObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SGOWSpaceObject.m; path = "14029481202014-02-10_13-05-31__AstronmicalDataModel/SGOWSpaceObject.m"; sourceTree = "<group>"; };
+		96A1BCF01B81D8D400D6C6BD /* SGSpaceImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSpaceImageViewController.h; sourceTree = "<group>"; };
+		96A1BCF11B81D8D400D6C6BD /* SGSpaceImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSpaceImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				969EBD291B79B2EA0046134D /* SGAppDelegate.h */,
 				969EBD2A1B79B2EA0046134D /* SGAppDelegate.m */,
 				969EBD2C1B79B2EA0046134D /* Main.storyboard */,
+				96A1BCF01B81D8D400D6C6BD /* SGSpaceImageViewController.h */,
+				96A1BCF11B81D8D400D6C6BD /* SGSpaceImageViewController.m */,
 				969EBD521B79B41A0046134D /* SGTableViewController.h */,
 				969EBD531B79B41A0046134D /* SGTableViewController.m */,
 				96A1BCA01B81B72D00D6C6BD /* SGOWSpaceObject.h */,
@@ -309,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				969EBD2B1B79B2EA0046134D /* SGAppDelegate.m in Sources */,
+				96A1BCF21B81D8D400D6C6BD /* SGSpaceImageViewController.m in Sources */,
 				969EBD271B79B2EA0046134D /* main.m in Sources */,
 				96A1BCA21B81B72D00D6C6BD /* SGOWSpaceObject.m in Sources */,
 				969EBD541B79B41A0046134D /* SGTableViewController.m in Sources */,
