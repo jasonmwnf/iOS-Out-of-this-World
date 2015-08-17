@@ -9,6 +9,7 @@
 #import "SGTableViewController.h"
 #import "AstronomicalData.h"
 #import "SGOWSpaceObject.h"
+#import "SGSpaceImageViewController.h"
 
 @interface SGTableViewController ()
 
@@ -45,17 +46,20 @@
         SGOWSpaceObject *planet = [[SGOWSpaceObject alloc] initWithData:planetData andImage:[UIImage imageNamed:imageName]];
         [self.planets addObject:planet];
     }
-    
-//    NSMutableDictionary *myDictionary = [[NSMutableDictionary alloc] init];
-//    NSString *firstColor = @"red";
-//    [myDictionary setObject:firstColor forKey:@"firetruck color"];
-//    NSLog(@"%@", myDictionary);
-//    
-//    NSString *redString = [myDictionary objectForKey:@"firetruck color"];
-//    NSLog(@"%@", redString);
-    
-    NSNumber *myNumber = [NSNumber numberWithInt:5];
-    NSLog(@"%@", myNumber);
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UITableViewCell class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[SGSpaceImageViewController class]])
+        {
+            SGSpaceImageViewController *nextViewController = segue.destinationViewController;
+            NSIndexPath *path = [self.tableView indexPathForCell:sender];
+            SGOWSpaceObject *selectedObject = self.planets[path.row];
+            nextViewController.spaceObject = selectedObject;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning

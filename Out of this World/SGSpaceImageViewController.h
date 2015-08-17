@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SGOWSpaceObject.h"
 
 @interface SGSpaceImageViewController : UIViewController <UIScrollViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) SGOWSpaceObject *spaceObject;
 
 
 @end
