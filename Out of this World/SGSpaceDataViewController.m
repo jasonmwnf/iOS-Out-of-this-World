@@ -1,18 +1,18 @@
 //
-//  SGSpaceImageViewController.m
+//  SGSpaceDataViewController.m
 //  Out of this World
 //
 //  Created by Jason Williams on 2015-08-17.
 //  Copyright (c) 2015 Screaming Goat. All rights reserved.
 //
 
-#import "SGSpaceImageViewController.h"
+#import "SGSpaceDataViewController.h"
 
-@interface SGSpaceImageViewController ()
+@interface SGSpaceDataViewController ()
 
 @end
 
-@implementation SGSpaceImageViewController
+@implementation SGSpaceDataViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,25 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.imageView = [[UIImageView alloc] initWithImage:self.spaceObject.spaceImage];
-    self.scrollView.contentSize = self.imageView.frame.size;
-    [self.scrollView addSubview:self.imageView];
-    self.scrollView.delegate = self;
-    
-    self.scrollView.maximumZoomScale = 2.0;
-    self.scrollView.minimumZoomScale = 0.5;
+    self.view.backgroundColor = [UIColor blackColor];
+    self.tableView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
-{
-    return self.imageView;
 }
 
 /*
