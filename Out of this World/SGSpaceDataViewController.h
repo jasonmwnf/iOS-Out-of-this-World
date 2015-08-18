@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SGOWSpaceObject.h"
 
 @interface SGSpaceDataViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) SGOWSpaceObject *spaceObject;
 
 @end
